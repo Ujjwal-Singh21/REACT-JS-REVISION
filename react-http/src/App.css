@@ -1,0 +1,16 @@
+.primary {
+  color: red;
+  font-style: unset
+}
+
+.secondary {
+  color: darkblue;
+  font-style: inherit;
+}
+
+.formUI {
+  text-align: center;
+  background-color: lightblue;
+  border: 3px solid #555;
+  border-radius: 4px;
+}
