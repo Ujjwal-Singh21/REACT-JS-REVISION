@@ -8,7 +8,7 @@ import CounterTwo from './Components/UseReducerHook/CounterTwo'
 function App () {
   return (
     <div className='App'>
-      <CounterThree />
+      {/* <CounterThree /> */}
       {/* <CounterTwo /> */}
       {/* <CounterOne /> */}
 
@@ -17,6 +17,7 @@ function App () {
           <ComponentC />
         </ChannelProvider>
       </UserProvider> */}
+
     </div>
   )
 }

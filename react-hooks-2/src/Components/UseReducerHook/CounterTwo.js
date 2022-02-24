@@ -31,13 +31,13 @@ function CounterTwo () {
       <h1> First Counter: {count.firstCounter} </h1>
       <h1> Second Counter: {count.secondCounter} </h1>
       <h1>
-      <button onClick={() => dispatch({ type: 'Increment', value: 1 })}>Increment</button>
-      <button onClick={() => dispatch({ type: 'Decrement', value: 1 })}>Decrement</button>
-      <button onClick={() => dispatch({ type: 'Increment', value: 5 })}>Increment 5</button>
-      <button onClick={() => dispatch({ type: 'Decrement', value: 5 })}>Decrement 5</button>
+      <button onClick={() => dispatch({ type: 'Increment', value: 1 })}> Increment </button>
+      <button onClick={() => dispatch({ type: 'Decrement', value: 1 })}> Decrement </button>
+      <button onClick={() => dispatch({ type: 'Increment', value: 5 })}> Increment 5 </button>
+      <button onClick={() => dispatch({ type: 'Decrement', value: 5 })}> Decrement 5 </button>
       <div>
-      <button onClick={() => dispatch({ type: 'Increment2', value: 1 })}>Increment button 2</button>
-      <button onClick={() => dispatch({ type: 'Decrement2', value: 1 })}>Decrement button 2</button>
+      <button onClick={() => dispatch({ type: 'Increment2', value: 1 })}> Increment button 2 </button>
+      <button onClick={() => dispatch({ type: 'Decrement2', value: 1 })}> Decrement button 2 </button>
       </div>
       <button onClick={() => dispatch({ type: 'Reset' })}> Reset </button>
       </h1>

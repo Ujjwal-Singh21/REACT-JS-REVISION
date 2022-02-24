@@ -8,7 +8,7 @@ function ComponentE () {
   return (
     <div>
       <h1>
-        using useContext Hook - User - {user} : Channel - {channel}
+        Using useContext Hook - User - {user} : Channel - {channel}
       </h1>
       <ComponentF />
     </div>

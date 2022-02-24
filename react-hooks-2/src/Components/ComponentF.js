@@ -5,19 +5,23 @@ function ComponentF () {
   return (
     <div>
       <UserConsumer>
-        {(user) => {
+      {
+        (user) => {
           return (
             <ChannelConsumer>
-              {(channel) => {
+            {
+              (channel) => {
                 return (
                   <h1>
-                    using normal approach -  User - {user} : Channel - {channel}
+                    Using Normal Approach -  User - {user} : Channel - {channel}
                   </h1>
                 )
-              }}
+              }
+            }
             </ChannelConsumer>
           )
-        }}
+        }
+      }
       </UserConsumer>
     </div>
   )
