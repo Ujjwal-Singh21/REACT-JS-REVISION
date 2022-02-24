@@ -1,7 +1,7 @@
 // with a custom hook, basic code here and functionality code like state management
 // for firstName, lastName, passing value and event capturing handler are available in
 // custom hook file 'useInput' which is returned from there and receieved here simply
-// using Array Destructuring feature
+// using Array Destructuring feature.
 
 import React from 'react'
 import useInput from './useInput'
