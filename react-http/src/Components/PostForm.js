@@ -20,7 +20,7 @@ class PostForm extends Component {
     console.log(this.state)
     axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
     .then((response) => {
-      console.log(response);
+      console.log(response.data);
     })
     .catch((error) => {
       console.log(error);
@@ -34,7 +34,8 @@ class PostForm extends Component {
       <div >
         <form onSubmit={this.submitHandler}>
 
-          <div>
+          <div className='formUI'>
+            <label> UserID : </label>
             <input
               type='text'
               name='userId'
@@ -43,7 +44,8 @@ class PostForm extends Component {
             ></input>
           </div>
 
-          <div>
+          <div className='formUI'>
+          <label> Title : </label>
             <input
               type='text'
               name='title'
@@ -52,7 +54,8 @@ class PostForm extends Component {
             ></input>
           </div>
 
-          <div>
+          <div className='formUI'>
+          <label> Body : </label>
             <input
               type='text'
               name='body'

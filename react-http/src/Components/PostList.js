@@ -10,7 +10,7 @@ class PostList extends Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
       axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((response) => {
           console.log(response);
