@@ -7,7 +7,7 @@ function DataFetchingOne () {
   const [post, setPost] = useState({})
 
   useEffect(() => {
-      console.log('data fetching');
+    console.log('data fetching')
     axios
       .get('https://jsonplaceholder.typicode.com/posts/99')
       .then((response) => {
@@ -21,8 +21,8 @@ function DataFetchingOne () {
         setError('Sorry Something went wrong')
       })
   }, [])
+
   return (
-    
     <div>
       {loading ? 'Loadind data' : post.title}
       {error ? error : null}

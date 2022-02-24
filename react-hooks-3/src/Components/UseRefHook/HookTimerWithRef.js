@@ -1,5 +1,5 @@
 // rectifying the old error by using useRef() hook which contains 'interval' variable
-// and makes it globally scoped
+// and makes it globally scoped.
 // this hook can be used to create a generic container which can hold a mutable value
 // similar to instance property on class components.
 // 1) this generic container does not cause re-renders when the mutable value/data
@@ -27,7 +27,7 @@ function HookTimerWithRef () {
   return (
     <div>
       HookTimer Value - {timer}
-      <button onClick={() => clearInterval(intervalRef.current)}>Clear Hook Timer</button>
+      <button onClick={() => clearInterval(intervalRef.current)}> Clear Hook Timer </button>
     </div>
   )
 }

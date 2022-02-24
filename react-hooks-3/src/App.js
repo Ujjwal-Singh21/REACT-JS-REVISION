@@ -43,18 +43,22 @@ function App () {
       {/* <DataFetchingOne /> */}
     </div>
   )
-
-  // const [count, dispatch] = useReducer(reducer, initialState)
-  // return (
-  //   <CountContext.Provider value={{CountState: count, CountDispatch: dispatch}} >
-  //     <div className='App'>
-  //       ParentCount - {count}
-  //       <ComponentA />
-  //       <ComponentB />
-  //       <ComponentC />
-  //     </div>
-  //   </CountContext.Provider>
-  // )
 }
+
+// function App () {
+//   const [count, dispatch] = useReducer(reducer, initialState)
+//   return (
+//     <CountContext.Provider
+//       value={{ CountState: count, CountDispatch: dispatch }}
+//     >
+//       <div className='App'>
+//         ParentCount - {count}
+//         <ComponentA />
+//         <ComponentB />
+//         <ComponentC />
+//       </div>
+//     </CountContext.Provider>
+//   )
+// }
 
 export default App

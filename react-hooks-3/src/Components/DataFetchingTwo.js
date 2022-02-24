@@ -42,10 +42,11 @@ function DataFetchingTwo () {
         dispatch({ type: 'FETCH_FAILURE', payload: null })
       })
   }, [])
+
   return (
     <div>
-      {newState.loading ? 'loading' : newState.post.title}
-      {newState.error ? newState.error : null}
+      { newState.loading ? 'loading' : newState.post.title }
+      { newState.error ? newState.error : null }
     </div>
   )
 }

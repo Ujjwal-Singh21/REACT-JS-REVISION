@@ -8,6 +8,7 @@ export class ClassTimer extends Component {
     }
   }
   // if tick method is used in setInterval()
+  //-------------------------------------------
   //   tick = () => {
   //     this.setState(prevState => {
   //       return {
@@ -35,7 +36,7 @@ export class ClassTimer extends Component {
     return (
       <div>
          ClassTimer Value - {timer}
-        <button onClick={() => clearInterval(this.interval)}>Clear  Class Timer</button>
+        <button onClick={() => clearInterval(this.interval)}> Clear  Class Timer </button>
       </div>
     )
   }

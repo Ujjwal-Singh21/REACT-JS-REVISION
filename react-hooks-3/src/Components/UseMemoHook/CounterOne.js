@@ -23,12 +23,12 @@ function CounterOne () {
     <div>
 
       <div>
-        <button onClick={incrementOne}> CounterOne - {counterOne}</button>
-        <span>{isEven ? 'Even' : 'Odd'}</span>
+        <button onClick={incrementOne}> CounterOne - {counterOne} </button>
+        <span> { isEven ? 'Even' : 'Odd' } </span>
       </div>
 
       <div>
-        <button onClick={incrementTwo}> CounterTwo - {counterTwo}</button>
+        <button onClick={incrementTwo}> CounterTwo - {counterTwo} </button>
       </div>
 
     </div>

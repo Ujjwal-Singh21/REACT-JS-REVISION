@@ -9,7 +9,7 @@ function FocusInput () {
 
   return (
     <div>
-      <input type='text' ref={inputRef}></input>
+      <input type='text' ref={inputRef} />
     </div>
   )
 }
