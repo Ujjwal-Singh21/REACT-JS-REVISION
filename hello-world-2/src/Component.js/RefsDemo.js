@@ -29,13 +29,12 @@ class RefsDemo extends Component {
   render () {
     return (
       <div>
+
         <h1> RefsDemo </h1>
         {/* <input type='text' ref={this.inputRef} /> */}
 
         {/* using older callback approach  */}
         <input type='text' ref={this.setCbref} />
-
-
         <button onClick={this.clickHandler}> Click </button>
 
       </div>

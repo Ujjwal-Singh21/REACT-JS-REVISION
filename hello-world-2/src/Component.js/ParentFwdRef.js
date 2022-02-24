@@ -1,6 +1,6 @@
 // parent class component that directly access child class input element
 // here in this.inputRef.current.focus() -> current refers to child class
-// native input element which is going to receive ref fowarded from here
+// native input element which is going to receive ref fowarded from here.
 import React, { Component } from 'react'
 import FwdRef from './FwdRef'
 
