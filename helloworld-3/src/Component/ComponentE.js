@@ -1,6 +1,5 @@
 // Second middle level Component, C -> E -> F
 // consuming here using second approach called as contextType
-
 import React, { Component } from 'react'
 import ComponentF from './ComponentF'
 import UserContextAPI from './UserContextApi'
@@ -12,13 +11,14 @@ class ComponentE extends Component {
     return (
       <div>
         <ComponentF />
-        <h1>Using contextType {this.context}</h1>
+        <h1> Using contextType {this.context} </h1>
       </div>
     )
   }
 }
-// assigning imported userContextApi to contextType
-// if ur app supports Public Class view can write this line above as static
+
+// assigning imported userContextApi to contextType.
+// if ur app supports Public Class view, then u can write this line above as static.
 /* ComponentE.contextType = UserContextAPI */
 // now context value will be available in (this.context)
 

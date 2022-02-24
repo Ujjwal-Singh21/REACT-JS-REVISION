@@ -15,9 +15,9 @@ function App () {
     <div className='App'>
       
       {/* ContextAPI */}
-      <UserProvider value='Vishwas'>
+      {/* <UserProvider value='Vishwas'>
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
 
       {/* <Counter>
         {(count, incrementCount) => (
@@ -46,7 +46,7 @@ function App () {
       {/* <ClickCounterTwo /> */}
       {/* <HoverCounterTwo /> */}
 
-      {/* <User render = {(isLoggedIn)=> isLoggedIn ? 'Vishwas' : 'Guest'} /> */}
+      {/* <User render = {(isLoggedIn) => isLoggedIn ? 'Vishwas' : 'Guest'} /> */}
 
       {/* Updated with HOC, without code duplication */}
       {/* <ClickCounter1 name = 'Superman' /> */}

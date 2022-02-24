@@ -1,5 +1,4 @@
 // clickCounter with render props approach
-
 import React, { Component } from 'react'
 
 class ClickCounterTwo extends Component {
