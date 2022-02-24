@@ -4,7 +4,7 @@ function Person ({ person }) {
   return (
     <div>
       <h1>
-        I am {person.name} I am {person.age} years old and I know {person.skill}
+        I am {person.name}, I am {person.age} years old, and I know {person.skill}
       </h1>
     </div>
   )

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class ClassClick extends Component {
   
-  clickHandler () {
+  clickHandler = () => {
     console.log('Button Clicked in Class')
   }
 

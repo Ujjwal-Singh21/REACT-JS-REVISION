@@ -1,12 +1,14 @@
 import React from 'react'
 
 const FunctionClick = () => {
-  function clickHandler () {
+
+  const clickHandler = () => {
     console.log('Button Clicked in Function')
   }
+  
   return (
     <div>
-      <button onClick={clickHandler}> Click Function </button>
+      <button onClick={clickHandler}> Click in Function </button>
     </div>
   )
 }

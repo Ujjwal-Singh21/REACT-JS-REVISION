@@ -28,8 +28,8 @@ function CounterTwo () {
   
   return (
     <div>
-      <h1>First Counter: {count.firstCounter}</h1>
-      <h1>Second Counter: {count.secondCounter}</h1>
+      <h1> First Counter: {count.firstCounter} </h1>
+      <h1> Second Counter: {count.secondCounter} </h1>
       <h1>
       <button onClick={() => dispatch({ type: 'Increment', value: 1 })}>Increment</button>
       <button onClick={() => dispatch({ type: 'Decrement', value: 1 })}>Decrement</button>

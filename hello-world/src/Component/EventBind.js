@@ -10,6 +10,7 @@ class EventBind extends Component {
 
     // this.clickHandler = this.clickHandler.bind(this)
   }
+
   //   clickHandler () {
   //     this.setState({
   //       message: 'Good Bye'
@@ -22,10 +23,12 @@ class EventBind extends Component {
       message: 'Good Bye'
     })
   }
+
   render () {
     return (
       <div>
         <h1>{this.state.message}</h1>
+        
         {/* approach-1
                 <button onClick={this.clickHandler.bind(this)}> Click </button> */}
 

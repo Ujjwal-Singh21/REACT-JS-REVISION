@@ -1,11 +1,10 @@
 // passing a method as property(props) from parent to child component
-
 import React, { Component } from 'react'
 import ChildComponent from './ChildComponent'
 
 class ParentComponent extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       parentName: 'Parent'
     }
