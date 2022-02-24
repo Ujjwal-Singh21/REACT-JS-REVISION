@@ -8,11 +8,11 @@ function DataFetching () {
   useEffect(() => {
     axios
       .get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => {
+      .then((response) => {
         console.log(response)
         setPosts(response.data)
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error)
       })
   }, [])

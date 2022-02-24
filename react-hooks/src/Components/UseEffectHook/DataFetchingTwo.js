@@ -9,26 +9,29 @@ function DataFetchingTwo () {
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then(response => {
+      .then((response) => {
         console.log(response)
         setPost(response.data)
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error)
       })
   }, [id])
+
   return (
     <div>
+       <h1 className='primary'> Getting Data from Fake Api </h1>
+       
+      <div>
+        <label> Enter ID : </label>
+        <input
+          type='text'
+          value={id}
+          onChange={(event) => setId(event.target.value)}
+        />
+      </div>
 
-      <input
-        type='text'
-        value={id}
-        onChange={(event) => setId(event.target.value)}
-      />
-
-      <h1 className='primary'> Getting Data from Fake Api </h1>
       <h1 key={post.id}> {post.title} </h1>
-
     </div>
   )
 }

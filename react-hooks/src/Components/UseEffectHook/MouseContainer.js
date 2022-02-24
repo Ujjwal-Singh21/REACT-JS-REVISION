@@ -1,7 +1,7 @@
 // container function for HookMouse.js that has a toogle button which Unmounts the
 // Containing <HookMouse /> component. But for cleanUp we need another function
-// that we have written in HookMouse.js return from inside first
-// arg arrrow function passed to useEffect() method
+// that we have written in HookMouse.js return from inside first arg arrrow function
+// passed to useEffect() method.
 
 import React, { useState } from 'react'
 import HookMouse from './HookMouse'

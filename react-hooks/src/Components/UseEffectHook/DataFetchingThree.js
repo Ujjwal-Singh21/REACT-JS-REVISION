@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function DataFetchingThree () {
-
   const [post, setPost] = useState({})
   const [id, setId] = useState(1)
   const [idFromButtonClick, setIdFromButtonClick] = useState(1)
@@ -23,21 +22,25 @@ function DataFetchingThree () {
   const handleClick = () => {
     setIdFromButtonClick(id)
   }
-  
+
   return (
     <div>
-
-      <input
-        type='text'
-        value={id}
-        onChange={(event) => setId(event.target.value)}
-      />
-
-      <button type='button' value={id} onClick={handleClick}> GetPost </button>
-  
       <h1 className='primary'> Getting Data from Fake Api </h1>
-      <h1 key={post.id}> {post.title} </h1>
 
+      <div>
+        <label> Enter ID : </label>
+        <input
+          type='text'
+          value={id}
+          onChange={event => setId(event.target.value)}
+        />
+      </div>
+
+      <button type='button' value={id} onClick={handleClick}>
+        GetPost
+      </button>
+     
+      <h1 key={post.id}> {post.title} </h1>
     </div>
   )
 }

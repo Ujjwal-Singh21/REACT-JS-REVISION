@@ -17,11 +17,13 @@ function HookCounterFour () {
 
   return (
     <div>
-      <button onClick={addItem}> Add a Number</button>
+      <button onClick={addItem}> Add a Number </button>
       <ul>
-        {items.map(item => (
-          <li key={item.id}> {item.value} </li>
-        ))}
+       {
+          items.map((item) => (
+            <li key={item.id}> {item.value} </li>
+          ))
+       }
       </ul>
     </div>
   )

@@ -15,6 +15,7 @@ import HookCounterTwo from './Components/UseEffectHook/HookCounterTwo'
 import HookMouse from './Components/UseEffectHook/HookMouse'
 import IntervalClassCounter from './Components/UseEffectHook/IntervalClassCounter'
 import MouseContainer from './Components/UseEffectHook/MouseContainer'
+import UseStateHookCounterTwo from './Components/HookCounterTwo'
 
 
 function App () {
@@ -37,7 +38,7 @@ function App () {
       {/* useStateHooksExamples */}
       {/* <HookCounterFour /> */}
       {/* <HookCounterThree /> */}
-      {/* <HookCounterTwo /> */}
+      {/* <UseStateHookCounterTwo /> */}
       {/* <HookCounter /> */}
     </div>
   )

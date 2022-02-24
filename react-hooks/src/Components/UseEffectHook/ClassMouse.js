@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 class ClassMouse extends Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.state = {
       x: 0,
       y: 0
@@ -20,7 +20,7 @@ class ClassMouse extends Component {
     window.addEventListener('mousemove', this.logMousePosition)
   }
 
-  //   for Unmounting
+  // for Unmounting
   componentWillUnmount () {
     window.removeEventListener('mousemove', this.logMousePosition)
   }

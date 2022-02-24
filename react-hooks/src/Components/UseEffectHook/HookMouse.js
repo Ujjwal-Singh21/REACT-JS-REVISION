@@ -16,10 +16,11 @@ function HookMouse () {
 
     // clean-up code to cancel all subscriptions after unmounting the component
     return () => {
-      console.log('clean-up code executing')
+      console.log('Clean-up code executed')
       window.removeEventListener('mousemove', logMousePosition)
     }
   }, [])
+
   return (
     <div>
       Hook Mouse : X - {x} Y - {y}

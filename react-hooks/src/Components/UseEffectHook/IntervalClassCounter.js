@@ -1,5 +1,5 @@
-// counter using class component and its lifecycle methods
-// later used for comparison with same logic in functional component
+// Counter using class component and its lifecycle methods.
+// Later used for comparison with same logic in functional component.
 
 import React, { Component } from 'react'
 

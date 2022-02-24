@@ -1,6 +1,6 @@
-// useEffect() to increment counter in title and button
+// useEffect() to increment counter in title and button.
 // useEffect() takes an arrow function as argument and executed it every time the
-// component is re- rednered or updated
+// component is re- rednered or updated.
 
 import React, { useState, useEffect } from 'react'
 
