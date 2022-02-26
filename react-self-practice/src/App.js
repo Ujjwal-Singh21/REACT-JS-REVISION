@@ -30,12 +30,72 @@ import RenderPropsClickCounter from './Components/RenderProps.js/RenderPropsClic
 import RenderPropsCounter from './Components/RenderProps.js/RenderPropsCounter'
 import RenderPropsHoverCounter from './Components/RenderProps.js/RenderPropsHoverCounter'
 import Counter from './Components/SetState/Counter'
+import ParentComponent from './Components/UseCallBackHook/ParentComponent'
+import ClassCounter from './Components/UseEffectHook/ClassCounter'
+import ClassCounter2 from './Components/UseEffectHook/ClassCounter2'
+import ClassMouse from './Components/UseEffectHook/ClassMouse'
+import DataFetching1 from './Components/UseEffectHook/DataFetchingWithUseEffect/DataFetching1'
+import DataFetching2 from './Components/UseEffectHook/DataFetchingWithUseEffect/DataFetching2'
+import DataFetching3 from './Components/UseEffectHook/DataFetchingWithUseEffect/DataFetching3'
+import HookClassCounter from './Components/UseEffectHook/HookClassCounter'
+import HookCounter from './Components/UseEffectHook/HookCounter'
+import HookCounter2 from './Components/UseEffectHook/HookCounter2'
+import HookMouse from './Components/UseEffectHook/HookMouse'
+import IntervalClassCounter from './Components/UseEffectHook/IntervalClassCounter'
+import MouseContainer from './Components/UseEffectHook/MouseContainer'
+import MemoCounter from './Components/UseMemoHook/MemoCounter'
+import UserDataFetching from './Components/UseReducerHook/DataFetching.js/UserDataFetching'
+import UseReducer1 from './Components/UseReducerHook/UseReducer1'
+import UseReducer2 from './Components/UseReducerHook/UseReducer2'
+import UseReducer3 from './Components/UseReducerHook/UseReducer3'
+import Parent from './Components/UseReducerHook/UseReducerWithUseContext/Parent'
+import HookCounterWithoutRef from './Components/UseRefHook/HookCounterWithoutRef'
+import HookCounterWithRef from './Components/UseRefHook/HookCounterWithRef'
+import UseRefFocusInput from './Components/UseRefHook/UseRefFocusInput'
 import UseStateWithArray from './Components/UseStateHook/UseStateWithArray'
 import UseStateWithObject from './Components/UseStateHook/UseStateWithObject'
 
 function App () {
   return (
     <div className='App'>
+      {/* UseRef Hook Practice */}
+      {/* <HookCounterWithRef /> */}
+      {/* <HookCounterWithoutRef /> */}
+      {/* <UseRefFocusInput /> */}
+
+      {/* UseMemo Hook Practice */}
+      {/* <MemoCounter /> */}
+
+      {/* UseCallBack Practice */}
+      {/* <ParentComponent /> */}
+
+      {/* UseReducer with DataFetching */}
+      {/* <UserDataFetching /> */}
+
+      {/* UseReducer With UseContext Practice */}
+      {/* <Parent /> */}
+
+      {/* UseReducer Hook Practice */}
+      {/* <UseReducer3 /> */}
+      {/* <UseReducer2 /> */}
+      {/* <UseReducer1 /> */}
+
+      {/* Data Fetching with UseEffect Practice */}
+      {/* <DataFetching3 /> */}
+      {/* <DataFetching2 /> */}
+      {/* <DataFetching1 /> */}
+
+      {/* UseEffect Hook Practice */}
+      {/* <HookClassCounter /> */}
+      {/* <IntervalClassCounter /> */}
+      {/* <MouseContainer /> */}
+      {/* <HookMouse /> */}
+      {/* <ClassMouse /> */}
+      {/* <HookCounter2 /> */}
+      {/* <ClassCounter2 /> */}
+      {/* <HookCounter /> */}
+      {/* <ClassCounter /> */}
+
       {/* UseState Hook Practice */}
       {/* <UseStateWithArray /> */}
       {/* <UseStateWithObject /> */}

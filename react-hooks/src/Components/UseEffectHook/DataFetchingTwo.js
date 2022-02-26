@@ -20,7 +20,7 @@ function DataFetchingTwo () {
 
   return (
     <div>
-       <h1 className='primary'> Getting Data from Fake Api </h1>
+       <h1> Getting Data from Fake Api </h1>
        
       <div>
         <label> Enter ID : </label>
