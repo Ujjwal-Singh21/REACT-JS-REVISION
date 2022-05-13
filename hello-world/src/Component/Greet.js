@@ -4,6 +4,7 @@
 import React from 'react'
 
 // (eg-1) using normal JS function
+//---------------------------------
 // function Greet(){
 
 //     return <h1>Hello , This is first Functional Component</h1>
@@ -11,6 +12,7 @@ import React from 'react'
 // }
 
 // (eg-2) using arrow function
+//-----------------------------
 var Greet = () => (
   <h1>Hello , This is first Functional Component using Arrow Function</h1>
 )

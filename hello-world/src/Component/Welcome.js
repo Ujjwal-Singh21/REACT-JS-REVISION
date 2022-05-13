@@ -2,8 +2,8 @@
 // class component means ES6 classes
 // always extend a class component to React Component Class
 // always implement render() method in a class component
-
-import React, { Component } from 'react'
+//---------------------------------------------------------------
+import { Component } from 'react'
 
 class Welcome extends Component {
   render () {
