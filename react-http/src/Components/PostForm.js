@@ -4,6 +4,7 @@ import axios from 'axios'
 class PostForm extends Component {
   constructor () {
     super()
+
     this.state = {
       userId: ' ',
       title: ' ',
@@ -28,45 +29,48 @@ class PostForm extends Component {
   }
 
   render () {
+
     const { userId, title, body } = this.state
 
     return (
       <div >
+
         <form onSubmit={this.submitHandler}>
 
-          <div className='formUI'>
+          <div>
             <label> UserID : </label>
             <input
               type='text'
               name='userId'
               value={userId}
               onChange={this.changeHandler}
-            ></input>
+            />
           </div>
 
-          <div className='formUI'>
+          <div>
           <label> Title : </label>
             <input
               type='text'
               name='title'
               value={title}
               onChange={this.changeHandler}
-            ></input>
+            />
           </div>
 
-          <div className='formUI'>
+          <div>
           <label> Body : </label>
             <input
               type='text'
               name='body'
               value={body}
               onChange={this.changeHandler}
-            ></input>
+            />
           </div>
 
           <button type='submit'> Submit </button>
 
         </form>
+
       </div>
     )
   }
