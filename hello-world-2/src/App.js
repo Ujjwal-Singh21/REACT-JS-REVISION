@@ -1,22 +1,22 @@
 import './App.css'
-import Form from './Component.js/Form'
-import LifecycleA from './Component.js/LifecycleA'
-import FragmentDemo from './Component.js/FragmentDemo'
-import Table from './Component.js/Table'
-import PureComp from './Component.js/PureComp'
-import ParentComponent from './Component.js/ParentComponent'
-import RefsDemo from './Component.js/RefsDemo'
-import FocusInput from './Component.js/FocusInput'
-import ParentFwdRef from './Component.js/ParentFwdRef'
-import PortalDemo from './Component.js/PortalDemo'
-import Hero from './Component.js/Hero'
-import ErrorBoundary from './Component.js/ErrorBoundary'
+import Form from './Components/Form'
+import LifecycleA from './Components/LifecycleA'
+import FragmentDemo from './Components/FragmentDemo'
+import Table from './Components/Table'
+import PureComp from './Components/PureComp'
+import ParentComponent from './Components/ParentComponent'
+import RefsDemo from './Components/RefsDemo'
+import FocusInput from './Components/FocusInput'
+import ParentFwdRef from './Components/ParentFwdRef'
+import PortalDemo from './Components/PortalDemo'
+import Hero from './Components/Hero'
+import ErrorBoundary from './Components/ErrorBoundary'
 
 function App () {
   return (
     <div className='App'>
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroName='SuperMan' />
       </ErrorBoundary>
       <ErrorBoundary>
@@ -24,7 +24,7 @@ function App () {
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroName='Joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
       {/* <PortalDemo /> */}
       {/* <ParentFwdRef /> */}
@@ -34,7 +34,7 @@ function App () {
       {/* <PureComp /> */}
       {/* <Table/> */}
       {/* <FragmentDemo /> */}
-      {/* <LifecycleA /> */}
+      <LifecycleA />
       {/* <Form /> */}
     </div>
   )

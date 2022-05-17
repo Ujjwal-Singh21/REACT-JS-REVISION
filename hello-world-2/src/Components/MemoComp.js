@@ -3,6 +3,7 @@
 import React from "react";
 
 function MemoComp(){
+
     console.log('Rendering Memo Component');
 
     return(

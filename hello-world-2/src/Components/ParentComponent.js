@@ -27,13 +27,13 @@ class ParentComponent extends Component {
     return (
       <div>
 
-        <MemoComp name={this.state.name} />
-
         <h1> Parent Component </h1>
 
         {/* <RegularComponent name={this.state.name} /> */}
 
         {/* <PureComp name={this.state.name} /> */}
+
+        <MemoComp name={this.state.name} />
         
       </div>
     )

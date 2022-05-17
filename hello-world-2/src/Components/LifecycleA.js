@@ -7,34 +7,36 @@ class LifecycleA extends Component {
     this.state = {
       name: 'Bruce'
     }
-    console.log('LifecycleA constructor')
+    console.log('Lifecycle A constructor')
   }
 
   static getDerivedStateFromProps (props, state) {
-    console.log('LifecycleA getDerivedStateFromProps')
+    console.log('Lifecycle A getDerivedStateFromProps')
     return null
   }
 
   componentDidMount () {
-    console.log('LifecycleA componentDidMount ')
+    console.log('Lifecycle A componentDidMount ')
   }
 
   //   adding update phase extra 3 methods
+  //----------------------------------------
   shouldComponentUpdate (nextProps, nextState) {
-    console.log('LifecycleA shouldComponentUpdate ')
+    console.log('Lifecycle A shouldComponentUpdate ')
     return true
   }
 
   getSnapshotBeforeUpdate (prevProps, prevState) {
-    console.log('LifecycleA getSnapshotBeforeUpdate ')
+    console.log('Lifecycle A getSnapshotBeforeUpdate ')
     return null
   }
 
   componentDidUpdate (prevprops, prevState, snapshot) {
-    console.log('LifecycleA componentDidUpdate ')
+    console.log('Lifecycle A componentDidUpdate ')
   }
 
   // onclick handler method
+  //-----------------------
   changeState = () => {
     this.setState({
       name: 'Clark'
@@ -42,10 +44,10 @@ class LifecycleA extends Component {
   }
 
   render () {
-    console.log('LifecycleA render')
+    console.log('Lifecycle A render')
     return (
       <div>
-        <h1> LifecyleA </h1>
+        <h1> Lifecyle A </h1>
         <button onClick={this.changeState}> Change State </button>
         <LifecycleB />
       </div>

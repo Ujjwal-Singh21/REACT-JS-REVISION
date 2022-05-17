@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component, PureComponent } from 'react'
 
 class PureComp extends PureComponent {
   render () {

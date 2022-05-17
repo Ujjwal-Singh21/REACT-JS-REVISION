@@ -1,4 +1,5 @@
 // creating a form to practice controlled component
+//---------------------------------------------------
 import React, { Component } from 'react'
 
 class Form extends Component {
@@ -36,9 +37,9 @@ class Form extends Component {
 
   render () {
 
-    //   by destructuring the state properties here
-    //   In value property, we can write this.state.username as username
-    //   similarly this.state.comments as simply comments
+    //   by destructuring the state properties here,
+    //   In value property, we can write this.state.username as -> username
+    //   similarly this.state.comments as -> simply comments
 
     const { username, comments, topic } = this.state
 
@@ -52,7 +53,7 @@ class Form extends Component {
             //value={this.state.username}
             value={username}
             onChange = {this.handleUserNameChange}
-          ></input>
+          />
         </div>
 
         <div>
@@ -60,11 +61,12 @@ class Form extends Component {
           <textarea
             value={comments}
             onChange = {this.handleCommentsChange}
-          ></textarea>
+          />
         </div>
 
         <div>
           <label> Topic </label>
+
           <select value={topic} onChange = {this.handleTopicChange}>
 
             <option>---Select a Topic---</option>
