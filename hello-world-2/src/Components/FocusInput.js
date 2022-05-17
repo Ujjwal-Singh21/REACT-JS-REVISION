@@ -1,4 +1,5 @@
-// parent component handling input component and input element in that Child Component
+// parent component handling input component and input element in that Child Component.
+//---------------------------------------------------------------------------------------
 import React, { Component } from 'react'
 import Input from './Input'
 

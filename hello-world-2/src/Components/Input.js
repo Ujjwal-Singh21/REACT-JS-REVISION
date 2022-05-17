@@ -1,5 +1,5 @@
-// child component having input element and method to focus on that i/p element
-
+// child component having input element and method to focus on that i/p element.
+//--------------------------------------------------------------------------------
 import React, { Component } from 'react'
 
 class Input extends Component {

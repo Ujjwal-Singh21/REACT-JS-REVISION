@@ -16,7 +16,7 @@ function App () {
   return (
     <div className='App'>
 
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <Hero heroName='SuperMan' />
       </ErrorBoundary>
       <ErrorBoundary>
@@ -24,7 +24,7 @@ function App () {
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroName='Joker' />
-      </ErrorBoundary> */}
+      </ErrorBoundary>
 
       {/* <PortalDemo /> */}
       {/* <ParentFwdRef /> */}
@@ -34,7 +34,7 @@ function App () {
       {/* <PureComp /> */}
       {/* <Table/> */}
       {/* <FragmentDemo /> */}
-      <LifecycleA />
+      {/* <LifecycleA /> */}
       {/* <Form /> */}
     </div>
   )

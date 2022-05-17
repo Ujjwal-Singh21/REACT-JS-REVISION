@@ -1,25 +1,28 @@
-// refs make it possible to access DOM node directly within React
-// there are 2 approaches to create refs here in same code
-
+// refs make it possible to access DOM node directly within React.
+// there are 2 approaches to create refs here in same code.
+//-------------------------------------------------------------------
 import React, { Component } from 'react'
 
 class RefsDemo extends Component {
   constructor () {
     super()
+
     this.inputRef = React.createRef()
-    this.cbRef = null
-    this.setCbref = (element) => {
-      this.cbRef = element
-    }
+
+    // this.cbRef = null
+    // this.setCbref = (element) => {
+    //   this.cbRef = element
+    // }
   }
 
   componentDidMount () {
-    if (this.cbRef) {
-      this.cbRef.focus()
-    }
 
-    // this.inputRef.current.focus()
-    // console.log(this.inputref)
+    this.inputRef.current.focus()
+    console.log(this.inputref)
+
+    // if (this.cbRef) {
+    //   this.cbRef.focus()
+    // }
   }
 
   clickHandler = () => {
@@ -31,11 +34,13 @@ class RefsDemo extends Component {
       <div>
 
         <h1> RefsDemo </h1>
-        {/* <input type='text' ref={this.inputRef} /> */}
 
-        {/* using older callback approach  */}
-        <input type='text' ref={this.setCbref} />
+        {/* Using Normal approach  */}
+        <input type='text' ref={this.inputRef} />
         <button onClick={this.clickHandler}> Click </button>
+
+        {/* Using older callback approach  */}
+        {/* <input type='text' ref={this.setCbref} /> */}
 
       </div>
     )

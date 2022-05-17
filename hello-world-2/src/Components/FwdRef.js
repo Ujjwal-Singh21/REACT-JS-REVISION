@@ -1,9 +1,9 @@
-// child functional component
-// created as arrow function so that it can receive ref from parent
-// and forward to particular input element directly.
-// create React.forwardRef() and assign it to const
-// pass whole arrow function as parameter to this forwardRef() method
-
+// Child functional component.
+// Created as arrow function so that it can receive ref from Parent,
+// Then forward to particular input element directly.
+// Create React.forwardRef() and assign it to const, then
+// pass whole arrow function as parameter to this forwardRef() method.
+//-------------------------------------------------------------------------
 // (step-1) in beginning
 //-------------------------
 // const FwdRef = () => {
