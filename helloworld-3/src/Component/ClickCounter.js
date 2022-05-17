@@ -1,9 +1,11 @@
 // normal without HOC
+//--------------------
 import React, { Component } from 'react'
 
 class ClickCounter extends Component {
   constructor () {
     super()
+    
     this.state = {
       count: 0
     }

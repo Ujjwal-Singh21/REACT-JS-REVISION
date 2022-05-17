@@ -15,10 +15,13 @@ function App () {
     <div className='App'>
       
       {/* ContextAPI */}
-      {/* <UserProvider value='Vishwas'>
+      {/* ------------ */}
+      <UserProvider value='Vishwas'>
         <ComponentC />
-      </UserProvider> */}
+      </UserProvider>
 
+      {/* Render Props Approach More Fine Tuned  */}
+      {/* --------------------------------------------*/}
       {/* <Counter>
         {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
@@ -31,6 +34,8 @@ function App () {
         )}
       </Counter> */}
 
+      {/* Render Props Approach Normal  */}
+      {/* ------------------------------------- */}
       {/* <Counter
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
@@ -49,10 +54,12 @@ function App () {
       {/* <User render = {(isLoggedIn) => isLoggedIn ? 'Vishwas' : 'Guest'} /> */}
 
       {/* Updated with HOC, without code duplication */}
+      {/* ---------------------------------------------------- */}
       {/* <ClickCounter1 name = 'Superman' /> */}
       {/* <HoverCounter1 /> */}
 
       {/* Normal without HOC, with code duplication */}
+      {/* --------------------------------------------------- */}
       {/* <HoverCounter /> */}
       {/* <ClickCounter /> */}
     </div>

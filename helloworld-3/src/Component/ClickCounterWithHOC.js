@@ -1,4 +1,5 @@
 // Updated with HOC
+//-------------------
 import React, { Component } from 'react'
 import withCounter from './withCounterHOC'
 

@@ -1,11 +1,13 @@
 // HOC that adds additional functionality like counter and state
-
+//----------------------------------------------------------------
 import React, { Component } from 'react'
 
 const withCounter = (WrappedComponent, incrementByNo) => {
+
   class WithCounter extends Component {
     constructor (props) {
       super(props)
+
       this.state = {
         count: 0
       }
@@ -30,7 +32,9 @@ const withCounter = (WrappedComponent, incrementByNo) => {
       )
     }
   }
+  
   return WithCounter
+
 }
 
 export default withCounter

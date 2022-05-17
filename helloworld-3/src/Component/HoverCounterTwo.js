@@ -1,5 +1,5 @@
-// // hoverCounter with render props approach
-
+//HoverCounter with render props approach 
+//-----------------------------------------
 import React, { Component } from 'react'
 
 class HoverCounterTwo extends Component {
