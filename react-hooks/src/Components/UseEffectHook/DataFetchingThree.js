@@ -1,8 +1,10 @@
 // fetching data using useEffect() Hook
-import React, { useState, useEffect } from 'react'
+//---------------------------------------
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function DataFetchingThree () {
+
   const [post, setPost] = useState({})
   const [id, setId] = useState(1)
   const [idFromButtonClick, setIdFromButtonClick] = useState(1)
@@ -25,7 +27,8 @@ function DataFetchingThree () {
 
   return (
     <div>
-      <h1 className='primary'> Getting Data from Fake Api </h1>
+      
+      <h1> Getting Data from Fake Api </h1>
 
       <div>
         <label> Enter ID : </label>

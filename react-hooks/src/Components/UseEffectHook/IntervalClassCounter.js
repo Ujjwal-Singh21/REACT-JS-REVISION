@@ -1,24 +1,15 @@
 // Counter using class component and its lifecycle methods.
 // Later used for comparison with same logic in functional component.
-
-import React, { Component } from 'react'
+//----------------------------------------------------------------------
+import { Component } from 'react'
 
 class IntervalClassCounter extends Component {
   constructor () {
     super()
+
     this.state = {
       count: 0
     }
-  }
-
-  //creating interval timer inside componentDidMount because it executes only once
-  componentDidMount () {
-    this.interval = setInterval(this.tick, 1000)
-  }
-
-  // destroying timer after unmounting it from Dom
-  componentWillUnmount () {
-    clearInterval(this.interval)
   }
 
   tick = () => {
@@ -27,9 +18,22 @@ class IntervalClassCounter extends Component {
     })
   }
 
+  //creating interval timer inside componentDidMount because it executes only once
+  //---------------------------------------------------------------------------------
+  componentDidMount () {
+    this.interval = setInterval(this.tick, 1000)
+  }
+
+  // destroying timer after unmounting it from DOM
+  //------------------------------------------------
+  componentWillUnmount () {
+    clearInterval(this.interval)
+  }
+
   render () {
-      const { count } = this.state
-      
+    
+    const { count } = this.state
+
     return (
       <div>
         <h1> {count} </h1>

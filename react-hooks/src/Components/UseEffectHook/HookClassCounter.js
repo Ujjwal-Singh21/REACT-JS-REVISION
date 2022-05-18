@@ -1,9 +1,10 @@
-// in empty [] either specify count as dependency as [count]. orelse
-// in setCount use prevCount approach for normal running of ticker counter.
-
-import React, { useState, useEffect } from 'react'
+// In empty [] either specify count as dependency as [count]. orelse
+// In setCount use prevCount approach for normal running of ticker counter.
+//-----------------------------------------------------------------------------
+import { useState, useEffect } from 'react'
 
 function HookClassCounter () {
+  
   const [count, setCount] = useState(0)
 
   const tick = () => {

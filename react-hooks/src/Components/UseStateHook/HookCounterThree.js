@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+// useState with Object
+//-----------------------
+import { useState } from 'react'
 
 function HookCounterThree () {
+
   const [name, setName] = useState({ firstName: '', lastName: '' })
 
   return (
@@ -20,7 +23,7 @@ function HookCounterThree () {
 
       <h3>Your FirstName is : {name.firstName}</h3>
       <h3>Your LastName is : {name.lastName}</h3>
-      {/* <h2>{JSON.stringify(name)}</h2> */}
+      <h2>{JSON.stringify(name)}</h2>
     </form>
   )
 }

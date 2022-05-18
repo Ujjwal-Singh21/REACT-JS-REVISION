@@ -1,8 +1,10 @@
 // fetching data using useEffect() Hook
-import React, { useState, useEffect } from 'react'
+//--------------------------------------
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 function DataFetching () {
+  
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
@@ -16,7 +18,9 @@ function DataFetching () {
         console.log(error)
       })
   }, [])
-  return <div>
+
+  return (
+    <div>
       <h1> Getting Data from Fake Api </h1>
 
       <ol>
@@ -24,7 +28,8 @@ function DataFetching () {
               posts.map((post) => <li key={post.id}> {post.title} </li>)
           }
       </ol>
-  </div>
+    </div>
+  )
 }
 
 export default DataFetching

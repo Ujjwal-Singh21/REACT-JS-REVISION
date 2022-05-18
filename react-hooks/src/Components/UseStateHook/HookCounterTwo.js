@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function UseStateHookCounterTwo () {
+
   const initialCount = 0
   const [count, setCount] = useState(initialCount)
 
@@ -12,10 +13,10 @@ function UseStateHookCounterTwo () {
 
   return (
     <div>
-      Count: {count}
-      <button onClick={() => setCount(initialCount)}> Reset </button>
+      Count: {count} <br />
       <button onClick={() => setCount(prevCount => prevCount + 1)}> Increment </button>
       <button onClick={() =>  setCount(prevCount => prevCount -1 )}> Decrement </button>
+      <button onClick={() => setCount(initialCount)}> Reset </button>
       <button onClick={incrementFive}> Increment 5 </button>
 
     </div>

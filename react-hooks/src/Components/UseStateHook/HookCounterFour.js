@@ -1,11 +1,14 @@
 // useState with Array
-import React, { useState } from 'react'
+//----------------------
+import { useState } from 'react'
 
 function HookCounterFour () {
+
   const [items, setItems] = useState([])
   console.log(items);
 
   const addItem = () => {
+
     setItems([
       ...items,
       {
@@ -13,11 +16,14 @@ function HookCounterFour () {
         value: Math.floor(Math.random() * 10) + 1
       }
     ])
+    
   }
 
   return (
     <div>
+
       <button onClick={addItem}> Add a Number </button>
+
       <ul>
        {
           items.map((item) => (
@@ -25,6 +31,7 @@ function HookCounterFour () {
           ))
        }
       </ul>
+
     </div>
   )
 }

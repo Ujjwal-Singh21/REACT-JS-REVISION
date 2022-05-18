@@ -1,9 +1,11 @@
 // class counter for comparison with HookCounter with useEffect()
-import React, { Component } from 'react'
+//-----------------------------------------------------------------
+import { Component } from 'react'
 
 class ClassCounterOne extends Component {
   constructor () {
     super()
+    
     this.state = {
       count: 0
     }
