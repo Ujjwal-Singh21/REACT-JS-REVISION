@@ -1,6 +1,7 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
 
-// setting up reducer function and declaring initial State
+// Setting up reducer function and declaring initial State
+//----------------------------------------------------------
 const initialState = {
   firstCounter: 0,
   secondCounter: 10
@@ -24,6 +25,7 @@ const reducer = (state, action) => {
 }
 
 function CounterTwo () {
+  
   const [count, dispatch] = useReducer(reducer, initialState)
   
   return (

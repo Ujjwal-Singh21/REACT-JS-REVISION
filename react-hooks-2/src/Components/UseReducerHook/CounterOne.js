@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 
-// setting up reducer function and declaring initial State
+// Setting up reducer function and declaring initial State.
+//-----------------------------------------------------------
 const initialState = 0
 
 const reducer = (currentState, action) => {
@@ -17,6 +18,7 @@ const reducer = (currentState, action) => {
 }
 
 function CounterOne () {
+  
   const [count, dispatch] = useReducer(reducer, initialState)
   
   return (

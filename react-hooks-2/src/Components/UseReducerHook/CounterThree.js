@@ -1,6 +1,7 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
 
-// setting up reducer function and declaring initial State
+// Setting up reducer function and declaring initial State
+//----------------------------------------------------------
 const initialState = 0
 
 const reducer = (currentState, action) => {
@@ -17,8 +18,10 @@ const reducer = (currentState, action) => {
 }
 
 function CounterThree () {
+
   const [count, dispatch] = useReducer(reducer, initialState)
   const [countTwo, dispatchTwo] = useReducer(reducer, initialState)
+  
   return (
     <div>
       

@@ -1,6 +1,6 @@
 import './App.css'
-import ComponentC from './Components/ComponentC'
-import { UserProvider, ChannelProvider } from './Components/CreateContext'
+import ComponentC from './Components/UseContextHook/ComponentC'
+import { UserProvider, ChannelProvider } from './Components/UseContextHook/CreateContext'
 import CounterOne from './Components/UseReducerHook/CounterOne'
 import CounterThree from './Components/UseReducerHook/CounterThree'
 import CounterTwo from './Components/UseReducerHook/CounterTwo'
