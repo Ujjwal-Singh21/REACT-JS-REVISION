@@ -1,20 +1,20 @@
 import './App.css'
-import DocTitleOne from './Components/DocTitleOne'
-import DocTitleTwo from './Components/DocTitleTwo'
-import CounterOne from './Components/CounterOne'
-import CounterTwo from './Components/CounterTwo'
-import UserForm from './Components/UserForm'
-import UserFormTwo from './Components/UserFormTwo'
+import DocTitleOne from './Components/useDocumentTitle/DocTitleOne'
+import DocTitleTwo from './Components/useDocumentTitle/DocTitleTwo'
+import CounterOne from './Components/useCounter/CounterOne'
+import CounterTwo from './Components/useCounter/CounterTwo'
+import UserFormTwo from './Components/useInput/UserFormTwo'
+import UserFormOne from './Components/useInput/UserFormOne'
 
 function App () {
   return (
     <div className='App'>
-      {/* <UserForm /> */}
-      <UserFormTwo />
-      {/* <CounterOne />
-      <CounterTwo /> */}
       {/* <DocTitleOne /> */}
       {/* <DocTitleTwo /> */}
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+      {/* <UserFormOne /> */}
+      <UserFormTwo />
     </div>
   )
 }

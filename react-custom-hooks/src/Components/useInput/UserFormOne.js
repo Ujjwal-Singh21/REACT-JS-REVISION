@@ -1,13 +1,14 @@
-// without a custom hook all code and functionality together
-import React, { useState } from 'react'
+// Without a custom hook all code and functionality together in same component
+//------------------------------------------------------------------------------
+import { useState } from 'react'
 
-function UserForm () {
+function UserFormOne () {
 
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
 
-  const submitHandler = (event) => {
-      event.preventDefault()
+  const submitHandler = (e) => {
+      e.preventDefault()
       alert(` Hello Mr. ${firstName} ${lastName} `)
 
   }
@@ -33,4 +34,4 @@ function UserForm () {
   )
 }
 
-export default UserForm
+export default UserFormOne
