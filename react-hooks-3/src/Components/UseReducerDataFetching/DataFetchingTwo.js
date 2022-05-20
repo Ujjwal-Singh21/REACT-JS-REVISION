@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react'
+import { useEffect, useReducer } from 'react'
 import axios from 'axios'
 
 const initialState = {
@@ -8,7 +8,9 @@ const initialState = {
 }
 
 const reducer = (currentState, action) => {
+
   switch (action.type) {
+    
     case 'FETCH_SUCCESFULL':
       return {
         loading: false,
@@ -20,7 +22,7 @@ const reducer = (currentState, action) => {
       return {
         loading: false,
         post: {},
-        error: 'Sorry Something went wrong'
+        error: 'Sorry Something went wrong...!!'
       }
 
     default:
@@ -29,12 +31,13 @@ const reducer = (currentState, action) => {
 }
 
 function DataFetchingTwo () {
+  
   const [newState, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
       console.log('getting data');
     axios
-      .get('https://jsonplaceholder.typicode.com/posts/1')
+      .get('https://jsonplaceholder.typicode.com/posts/21')
       .then((response) => {
         dispatch({ type: 'FETCH_SUCCESFULL', payload: response.data })
       })

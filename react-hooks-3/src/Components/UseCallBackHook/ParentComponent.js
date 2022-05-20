@@ -4,9 +4,22 @@ import Count from './Count'
 import Button from './Button'
 
 function ParentComponent () {
+
   const [age, setAge] = useState(25)
   const [salary, setSalary] = useState(50000)
 
+  //Normal handlers
+  //-----------------
+  // const incrementAge = () => {
+  //   setAge(age + 1)
+  // }
+
+  // const incrementSalary = () => {
+  //   setSalary(salary + 1000)
+  // }
+
+  //memoized handlers using useCallback
+  //--------------------------------------
   const incrementAge = useCallback(() => {
     setAge(age + 1)
   }, [age])
@@ -15,6 +28,8 @@ function ParentComponent () {
     setSalary(salary + 1000)
   }, [salary])
 
+  // Jsx
+  //-------
   return (
     <div>
       <Title />
